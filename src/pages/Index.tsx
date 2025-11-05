@@ -128,15 +128,16 @@ const Index = () => {
           </div>
         </div>
       </nav>
-      <div className="container mx-auto px-4 py-8">
-        <section className="min-h-screen flex items-center justify-center text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 opacity-10 animate-gradient bg-200"></div>
-          <div className="relative z-10 animate-fade-in">
+      <section className="min-h-screen flex items-center justify-center text-center relative overflow-hidden -mx-4">
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 opacity-10 animate-gradient bg-200"></div>
+        <div className="relative z-10 animate-fade-in px-4">
             <div className="mb-6 inline-block">
               <div className="text-6xl mb-4 animate-scale-in">✨</div>
             </div>
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent">
-              Трекер Привычек
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent leading-tight">
+              Трекер
+              <br />
+              Привычек
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Создавайте полезные привычки за 2 клика. Отслеживайте прогресс каждый день.
@@ -154,9 +155,10 @@ const Index = () => {
                 </a>
               </Button>
             </div>
-          </div>
-        </section>
+        </div>
+      </section>
 
+      <div className="container mx-auto px-4">
         <section id="features" className="py-20">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
