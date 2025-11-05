@@ -66,8 +66,8 @@ const Index = () => {
       gradient: 'from-purple-500 to-indigo-500',
     },
     {
-      title: 'Полная приватность',
-      description: 'Данные хранятся только на вашем устройстве',
+      title: 'Работает в браузере',
+      description: 'Не нужно ничего скачивать и обновлять',
       gradient: 'from-blue-500 to-cyan-500',
     },
     {
@@ -84,19 +84,19 @@ const Index = () => {
     },
     {
       question: 'Как перенести данные на другое устройство?',
-      answer: 'В настройках есть функция экспорта профиля. Вы можете скачать файл с данными и импортировать его на другом устройстве.',
+      answer: 'В настройках есть функция экспорта профиля. Вы можете перенести профиль просто скопировав ссылку профиля или отсканировав QR код в настройках.',
     },
     {
-      question: 'Можно ли использовать офлайн?',
-      answer: 'Да! После установки PWA приложения, Habit Track работает полностью офлайн.',
+      question: 'Есть ли у вас приложение для телефона?',
+      answer: 'Скачивать ничего не нужно! Habit Track работает прямо в браузере. Но вы можете установить его как PWA приложение на главный экран — оно будет работать как обычное приложение.',
     },
     {
       question: 'Как установить как приложение?',
       answer: 'Откройте сайт в браузере и нажмите "Установить" в адресной строке. Приложение появится на главном экране.',
     },
     {
-      question: 'Безопасны ли мои данные?',
-      answer: 'Абсолютно! Все данные хранятся только на вашем устройстве и никуда не передаются.',
+      question: 'Что делать, если я потерял доступ к профилю?',
+      answer: 'Если вы сохранили ссылку профиля или QR код, просто откройте её на новом устройстве. Все привычки и статистика восстановятся автоматически.',
     },
   ];
 
@@ -136,7 +136,7 @@ const Index = () => {
               <div className="text-6xl mb-4 animate-scale-in">✨</div>
             </div>
             <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent">
-              Habit Track
+              Трекер Привычек
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Создавайте полезные привычки за 2 клика. Отслеживайте прогресс каждый день.
@@ -151,17 +151,6 @@ const Index = () => {
                 <a href="https://youmay.ru/app/" target="_blank" rel="noopener noreferrer">
                   <Icon name="Rocket" className="mr-2" size={24} />
                   Начать бесплатно
-                </a>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 py-6 border-2 hover:bg-white/50 transition-all duration-300 hover:scale-105"
-              >
-                <a href="https://youmay.ru/app/" target="_blank" rel="noopener noreferrer">
-                  <Icon name="Play" className="mr-2" size={24} />
-                  Посмотреть демо
                 </a>
               </Button>
             </div>
