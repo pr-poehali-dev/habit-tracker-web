@@ -145,14 +145,14 @@ const Index = () => {
               <button onClick={() => scrollToSection('benefits')} className="text-foreground/70 hover:text-foreground transition-colors">Преимущества</button>
               <button onClick={() => scrollToSection('faq')} className="text-foreground/70 hover:text-foreground transition-colors">FAQ</button>
               <Button asChild className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
-                <a href="#app">
+                <a href="https://youmay.ru/app/" target="_blank" rel="noopener noreferrer">
                   <Icon name="Rocket" className="mr-2" size={18} />
                   Начать
                 </a>
               </Button>
             </div>
             <Button asChild size="sm" className="md:hidden bg-gradient-to-r from-purple-600 to-blue-600">
-              <a href="#app">
+              <a href="https://youmay.ru/app/" target="_blank" rel="noopener noreferrer">
                 Начать
               </a>
             </Button>
@@ -181,7 +181,7 @@ const Index = () => {
               size="lg"
               className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 transition-all duration-300 hover:scale-105 shadow-xl"
             >
-              <a href="#app">
+              <a href="https://youmay.ru/app/" target="_blank" rel="noopener noreferrer">
                 <Icon name="Rocket" className="mr-2" size={24} />
                 Начать бесплатно
               </a>
@@ -191,9 +191,8 @@ const Index = () => {
               size="lg"
               variant="outline"
               className="text-lg px-8 py-6 border-2 hover:bg-purple-50 transition-all duration-300"
-              onClick={() => scrollToSection('how-it-works')}
             >
-              <a href="#how-it-works">
+              <a href="#how-it-works" onClick={(e) => { e.preventDefault(); scrollToSection('how-it-works'); }}>
                 <Icon name="Play" className="mr-2" size={24} />
                 Как это работает
               </a>
@@ -354,7 +353,7 @@ const Index = () => {
                 size="lg"
                 className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 bg-white text-purple-600 hover:bg-gray-100 transition-all duration-300 hover:scale-110 shadow-2xl"
               >
-                <a href="#app">
+                <a href="https://youmay.ru/app/" target="_blank" rel="noopener noreferrer">
                   <Icon name="Sparkles" className="mr-2" size={20} />
                   <span className="hidden sm:inline">Создать первую привычку</span>
                   <span className="sm:hidden">Создать привычку</span>
