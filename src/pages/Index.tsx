@@ -137,7 +137,7 @@ const Index = () => {
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center">
                 <Icon name="Target" size={24} className="text-white" />
               </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Habit Tracker</span>
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Habit Track</span>
             </div>
             <div className="hidden md:flex items-center gap-8">
               <button onClick={() => scrollToSection('features')} className="text-foreground/70 hover:text-foreground transition-colors">Возможности</button>
@@ -169,7 +169,7 @@ const Index = () => {
             </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent leading-tight">
-            Привычки, которые меняют жизнь
+            Бесплатный<br />Трекер Привычек
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto">
             Создавайте полезные привычки за 2 клика. Отслеживайте прогресс на визуальном календаре. 
@@ -190,7 +190,7 @@ const Index = () => {
               asChild
               size="lg"
               variant="outline"
-              className="text-lg px-8 py-6 border-2 hover:bg-purple-50 transition-all duration-300"
+              className="text-lg px-8 py-6 border-2 hover:bg-white hover:text-foreground transition-all duration-300"
             >
               <a href="#how-it-works" onClick={(e) => { e.preventDefault(); scrollToSection('how-it-works'); }}>
                 <Icon name="Play" className="mr-2" size={24} />
@@ -371,7 +371,7 @@ const Index = () => {
               <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
                 <Icon name="Target" size={24} />
               </div>
-              <span className="text-2xl font-bold">Habit Tracker</span>
+              <span className="text-2xl font-bold">Habit Track</span>
             </div>
             <div className="text-center md:text-right text-white/70">
               <p>© 2024 Habit Tracker. Все привычки под контролем.</p>
