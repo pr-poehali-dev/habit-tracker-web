@@ -197,7 +197,7 @@ const Index = () => {
 
         <section id="benefits" className="py-20">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
               Преимущества
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -266,11 +266,12 @@ const Index = () => {
               <Button
                 asChild
                 size="lg"
-                className="text-lg px-8 py-6 bg-white text-purple-600 hover:bg-gray-100 transition-all duration-300 hover:scale-110"
+                className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 bg-white text-purple-600 hover:bg-gray-100 transition-all duration-300 hover:scale-110"
               >
                 <a href="https://youmay.ru/app/" target="_blank" rel="noopener noreferrer">
-                  <Icon name="Sparkles" className="mr-2" size={24} />
-                  Создать первую привычку
+                  <Icon name="Sparkles" className="mr-2" size={20} />
+                  <span className="hidden sm:inline">Создать первую привычку</span>
+                  <span className="sm:hidden">Создать привычку</span>
                 </a>
               </Button>
             </div>
